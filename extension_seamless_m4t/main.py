@@ -79,7 +79,7 @@ def seamless_translate(text, src_lang_name, tgt_lang_name, **kwargs):
 @decorator_log_generation
 @decorator_extension_inner
 @log_function_time
-def seamless_translate_audio(audio, tgt_lang_name):
+def seamless_translate_audio(audio, tgt_lang_name, **kwargs):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     model, processor = get_model("facebook/seamless-m4t-v2-large", device)
