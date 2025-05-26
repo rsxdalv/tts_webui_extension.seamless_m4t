@@ -69,7 +69,7 @@ def seamless_translate(text, src_lang_name, tgt_lang_name, **kwargs):
     return {"audio_out": (sample_rate, audio_array_from_text.numpy())}
 
 
-@decorator_extension_outer
+# @decorator_extension_outer
 @decorator_apply_torch_seed
 @decorator_save_metadata
 @decorator_save_wav
@@ -77,7 +77,7 @@ def seamless_translate(text, src_lang_name, tgt_lang_name, **kwargs):
 @decorator_add_base_filename
 @decorator_add_date
 @decorator_log_generation
-@decorator_extension_inner
+# @decorator_extension_inner
 @log_function_time
 def seamless_translate_audio(audio, tgt_lang_name, **kwargs):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
