@@ -1,12 +1,12 @@
 import setuptools
 
 setuptools.setup(
-    name="extension_seamless_m4t",
+    name="tts_webui_extension.seamless_m4t",
     packages=setuptools.find_namespace_packages(),
-    version="0.0.3",
+    version="0.0.4",
     author="rsxdalv",
     description="SeamlessM4T is a multilingual and multimodal translation model supporting text and speech",
-    url="https://github.com/rsxdalv/extension_seamless_m4t",
+    url="https://github.com/rsxdalv/tts_webui_extension.seamless_m4t",
     project_urls={},
     scripts=[],
     install_requires=[
@@ -19,3 +19,4 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
 )
+
