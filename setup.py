@@ -7,7 +7,7 @@ README = (HERE / "README.md").read_text(encoding="utf-8") if (HERE / "README.md"
 setuptools.setup(
     name="tts_webui_extension.seamless_m4t",
     packages=setuptools.find_namespace_packages(),
-    version="0.0.5",
+    version="0.0.6",
     author="rsxdalv",
     description="SeamlessM4T is a multilingual and multimodal translation model supporting text and speech",
     long_description=README,
