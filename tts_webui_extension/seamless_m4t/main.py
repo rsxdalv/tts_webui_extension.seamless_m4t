@@ -2,7 +2,7 @@ import gradio as gr
 import torch
 import torchaudio
 
-from extension_seamless_m4t.language_code_to_name import (
+from .language_code_to_name import (
     text_source_languages,
     speech_target_languages,
     text_source_codes,
